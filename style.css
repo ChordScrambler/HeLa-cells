@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+}
+
+/* General Styling for the Timeline Sections */
+.timeline-section {
+    text-align: center;
+    color: white;
+}
+
+.timeline-section h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 10%;
+}
+
+.timeline-section img {
+    width: 30rem;
+    max-width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 8px;
+    position: absolute;
+    right: 10%;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .timeline-section h4 {
+        font-size: 2em;
+    }
+
+    .timeline-section img {
+        max-width: 500px;
+    }
+}
